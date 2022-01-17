@@ -27,7 +27,9 @@
         <plugins>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.0.0</version>
+                <configuration>
+                    <webXml>${project.basedir}\src\main\webapp\WEB-INF\web.xml</webXml>
+                </configuration>
          </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
